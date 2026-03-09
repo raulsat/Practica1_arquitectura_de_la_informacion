@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Pinteres</title>
+    <meta name="description" content="Descubre recetas, ideas para casa y estilos de vida">
+    <meta name="keywords" content="diseño, inspiracion, fotos, recetas">
+
+    <link rel="canonical" href="https://www.mipinterest.com/inicio">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.svg" alt="Logo de Mi Pinterest">
+        </div>
+
+        <section class="search-bar">
+            <form action="/buscar" method="get">
+                <input type="search" placeholder="Buscar ideas..." aria-label="Buscar en el sitio">
+                <!-- ponemos un aria-label para describir lo que hace el boton para personas con discapacidad visual -->
+            </form>
+        </section>
+
+        <nav aria-label="Navegacion principal">
+            <ul>
+                <li><a href="/inicio">Inicio</a></li>
+                <li><a href="/hoy">Hoy</a></li>
+                <li><a href="/crear">Crear</a></li>
+            </ul>
+        </nav>
+
+        <nav class="user-menu" aria-label="Menu de usuario">
+            <button aria-label="Notificaciones">Notificaciones</button>
+            <button aria-label="Mensajes">Mensajes</button>
+            <a href="/perfil" class="profile">Mi Perfil</a>
+        </nav>
+    </header>
+
+    <!-- utilizare picsum para imagenes aleatorias y asi que muestre algo para entenderlo mejor -->
+
+    <hr>  <!-- separador semantico, se utiliza para representar u cambio de tema o separacion entre secciones dentro del mismo bloque, no necesita cerrarse -->
+    <main>
+        <!-- con el main le decimos al navegador donde se define el contenido principal, el "corazon" de HTML, solo debe haber un main por pagina -->
+        
+        <h1>Inspiracion</h1>
+
+        <section class="pin-grid">
+            <article class="pin-card">
+                <figure>
+                    <a href="/pin/decoracion-moderna-001"></a>
+                    <img src="https://picsum.photos/400/500" alt="Tarta de chocolate con fresas frescas" loading="lazy">
+                        <!-- el lazy le dice al navegador que hasta que el usuario no haga scroll no cargue la pagina -->
+                    </a>
+                    <figcaption>Recetas fáciles de postres</figcaption>
+                </figure>
+                <footer>
+                    <p>Publicado por <a href="/user/raulcocina">Raul Cocina</a></p>
+                    <button type="button">Guardar</button>
+                </footer>
+            </article>
+
+            </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Información legal">
+            <ul>
+                <li><a href="/condiciones">Condiciones de servicio</a></li>
+                <li><a href="/privacidad">Política de privacidad</a></li>
+                <li><a href="/ayuda">Centro de ayuda</a></li>
+            </ul>
+        </nav>
+        <p>2026 Pinterest Clone - Práctica de Arquitectura Web</p>
+    </footer>
+
+</body>
+</html>
+                </figure>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
